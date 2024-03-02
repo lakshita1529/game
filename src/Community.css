@@ -1,0 +1,54 @@
+/* CommunityPage.css */
+
+.community-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up at least the full height of the viewport */
+}
+
+.feedback-section {
+    background-color: #000000;
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Add a border to separate the feedback section from the rest of the page */
+}
+
+.feedback-section h2  {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.feedback-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.feedback-button:hover {
+    background-color: #0056b3;
+    margin: 7px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #868d1d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+   
+}
+p{
+    color: #ffffff;
+}

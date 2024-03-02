@@ -1,0 +1,55 @@
+/* AboutSection.css */
+.about-section {
+    padding: 50px;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+.description {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 20px; /* Add space between text and image */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Align items side by side on larger screens */
+        align-items: center; /* Center align items vertically */
+    }
+
+    .description {
+        width: 60%; /* Take up 60% of the width on larger screens */
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 20px; /* Add space between text and image */
+    }
+
+    .image-container {
+        width: 40%; /* Take up 40% of the width on larger screens */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+}

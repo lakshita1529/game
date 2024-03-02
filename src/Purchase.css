@@ -1,0 +1,67 @@
+/* PurchasePlatform.css */
+
+.purchase-platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('./assets/background1.jpg'); /* Replace '/path/to/background/image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .purchase-form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding opacity to make the form container slightly transparent */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('./assets/background.jpg'); 
+  }
+  
+  .purchase-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='number'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  /* Parallax effect */
+.purchase-platform.parallax {
+    background-attachment: fixed;
+  }
+  
+  /* Stop parallax effect */
+  @media screen and (max-width: 768px) {
+    .purchase-platform {
+      background-attachment: scroll !important;
+    }
+  }
